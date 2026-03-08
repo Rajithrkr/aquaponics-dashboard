@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Smart Aquaponics Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+</head>
+
+<body>
+
+<h1>🌱 Smart Aquaponics System</h1>
+
+<div class="container">
+
+<!-- Detection -->
+
+<div class="card">
+
+<h2>Plant Disease Detection</h2>
+
+<img id="plantImage" width="300">
+
+<p>Disease : <span id="disease"></span></p>
+
+<p>Confidence : <span id="confidence"></span>%</p>
+
+</div>
+
+
+<!-- Sensors -->
+
+<div class="card">
+
+<h2>Sensor Data</h2>
+
+<p>Temperature : <span id="temp"></span> °C</p>
+
+<p>Humidity : <span id="humidity"></span> %</p>
+
+<p>pH : <span id="ph"></span></p>
+
+<p>Water Level : <span id="water"></span></p>
+
+</div>
+
+
+<!-- Controls -->
+
+<div class="card">
+
+<h2>Pump Controls</h2>
+
+<button onclick="controlPump('pesticide',1)">
+Start Pesticide Pump
+</button>
+
+<button onclick="controlPump('pesticide',0)">
+Stop Pesticide Pump
+</button>
+
+<br><br>
+
+<button onclick="controlPump('fertilizer',1)">
+Start Fertilizer Pump
+</button>
+
+<button onclick="controlPump('fertilizer',0)">
+Stop Fertilizer Pump
+</button>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
