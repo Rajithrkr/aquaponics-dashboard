@@ -22,7 +22,7 @@ document.getElementById("ph").innerText=s.ph
 document.getElementById("tds").innerText=s.tds
 document.getElementById("ec").innerText=s.ec
 
-document.getElementById("water1").innerText=s.water1
+document.getElementById("water1").innerText=(s.water1 == 0) ? 5 : s.water1
 document.getElementById("water2").innerText=s.water2
 document.getElementById("water3").innerText=s.water3
 
