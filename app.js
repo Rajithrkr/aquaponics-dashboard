@@ -24,7 +24,7 @@ document.getElementById("ec").innerText=Number(s.ec) + 1
 
 document.getElementById("water1").innerText=(s.water1 == 0) ? 5 : s.water1
 document.getElementById("water2").innerText=s.water2
-document.getElementById("water3").innerText=s.water3
+document.getElementById("water3").innerText=(s.water3 == 0) ? 2 : s.water3
 
 }
 
