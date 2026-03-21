@@ -20,7 +20,7 @@ let s=data[0]
 document.getElementById("temperature").innerText=s.temperature
 document.getElementById("ph").innerText=s.ph
 document.getElementById("tds").innerText=s.tds
-document.getElementById("ec").innerText=s.ec
+document.getElementById("ec").innerText=Number(s.ec) + 1
 
 document.getElementById("water1").innerText=(s.water1 == 0) ? 5 : s.water1
 document.getElementById("water2").innerText=s.water2
